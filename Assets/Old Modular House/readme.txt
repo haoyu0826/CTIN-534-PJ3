@@ -1,0 +1,1 @@
+The screenshots used standard postprocessing, see the color grading in the picture.
