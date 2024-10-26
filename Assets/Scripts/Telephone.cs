@@ -8,6 +8,7 @@ public class Telephone : InteractableObject
 {
     [SerializeField] private GameObject dialogue;
     private string textDisplayed;
+    [SerializeField] private AudioSource audioSource;
 
     private void Start()
     {
@@ -17,6 +18,8 @@ public class Telephone : InteractableObject
     protected override void ProcessObject()
     {
         base.ProcessObject();
+
+        audioSource.Stop();
 
         PlayerManager.instance.pm.canMove = false;
         PlayerManager.instance.mm.canMove = false;

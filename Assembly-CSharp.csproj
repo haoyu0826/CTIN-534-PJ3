@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Electric Torch\Script\BatteryPowerPickup.cs" />
     <Compile Include="Assets\Scripts\Telephone.cs" />
+    <Compile Include="Assets\Scripts\DoorToClick.cs" />
     <Compile Include="Assets\Scripts\DoorController.cs" />
     <Compile Include="Assets\Scripts\InteractableObject.cs" />
     <Compile Include="Assets\Scripts\Torch.cs" />
