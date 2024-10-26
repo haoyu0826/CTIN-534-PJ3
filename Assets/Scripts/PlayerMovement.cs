@@ -89,7 +89,8 @@ public class PlayerMovement : MonoBehaviour
         // Update flashlight battery
         if (isFlashlightOn && flashlightBattery > 0)
         {
-            flashlightBattery -= batteryConsumptionRate * Time.deltaTime;
+            if (canMove)
+                flashlightBattery -= batteryConsumptionRate * Time.deltaTime;
 
             if (flashlightBattery <= 0)
             {

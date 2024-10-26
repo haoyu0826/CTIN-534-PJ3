@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SelectionManager : MonoBehaviour
 {
     public static SelectionManager instance { get; set; }
     public bool onTarget = false;
 
-    private Text interaction_text;
+    [SerializeField] private TextMeshProUGUI textToDisplay;
 
     private void Awake()
     {
@@ -29,15 +30,20 @@ public class SelectionManager : MonoBehaviour
             if (interactable && interactable.playerInRange)
             {
                 onTarget = true;
+
+                textToDisplay.text = interactable.textToDisplay;
+                textToDisplay.gameObject.SetActive(true);
             }
             else
             {
                 onTarget = false;
+                textToDisplay.gameObject.SetActive(false);
             }
         }
         else
         {
             onTarget = false;
+            textToDisplay.gameObject.SetActive(false);
         }
     }
 }

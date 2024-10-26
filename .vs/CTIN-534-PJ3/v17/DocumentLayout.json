@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "D:\\Unity\\CTIN-534-PJ3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|d:\\unity\\ctin-534-pj3\\assets\\scripts\\torch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\torch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|d:\\unity\\ctin-534-pj3\\assets\\scripts\\ui_flashlightbattery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui_flashlightbattery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|D:\\Unity\\CTIN-534-PJ3\\assets\\scripts\\teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|D:\\Unity\\CTIN-534-PJ3\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|d:\\unity\\ctin-534-pj3\\assets\\scripts\\telephone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\telephone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|D:\\Unity\\CTIN-534-PJ3\\assets\\scripts\\interactableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|D:\\Unity\\CTIN-534-PJ3\\assets\\scripts\\selectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\selectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|D:\\Unity\\CTIN-534-PJ3\\assets\\scripts\\mousemovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mousemovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|D:\\Unity\\CTIN-534-PJ3\\assets\\scripts\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D6E81-EDB8-48FC-42AA-37E883C2F50D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,57 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Torch.cs",
-              "DocumentMoniker": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\Torch.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Torch.cs",
-              "ToolTip": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\Torch.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Torch.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAkwB8AAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Telephone.cs",
+              "DocumentMoniker": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\Telephone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Telephone.cs",
+              "ToolTip": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\Telephone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Telephone.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAIwC0AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T01:58:56.496Z",
+              "WhenOpened": "2024-10-26T19:08:23.058Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InteractableObject.cs",
+              "DocumentMoniker": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\InteractableObject.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InteractableObject.cs",
+              "ToolTip": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\InteractableObject.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InteractableObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T18:28:28.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SelectionManager.cs",
+              "DocumentMoniker": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\SelectionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SelectionManager.cs",
+              "ToolTip": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\SelectionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SelectionManager.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAmwCEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T18:27:52.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Teleport.cs",
+              "DocumentMoniker": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\Teleport.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Teleport.cs",
+              "ToolTip": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\Teleport.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Teleport.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAxwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T21:28:00.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DoorController.cs",
+              "DocumentMoniker": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\DoorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DoorController.cs",
+              "ToolTip": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\DoorController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DoorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T20:16:51.603Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UI_FlashlightBattery.cs",
-              "DocumentMoniker": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\UI_FlashlightBattery.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI_FlashlightBattery.cs",
-              "ToolTip": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\UI_FlashlightBattery.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI_FlashlightBattery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T01:46:32.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
               "ToolTip": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAswBoAAAAqAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAiwE4AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T01:17:02.445Z"
+              "WhenOpened": "2024-10-18T01:17:02.445Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MouseMovement.cs",
               "DocumentMoniker": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\MouseMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MouseMovement.cs",
               "ToolTip": "D:\\Unity\\CTIN-534-PJ3\\Assets\\Scripts\\MouseMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\MouseMovement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T01:15:35.812Z"
+              "WhenOpened": "2024-10-18T01:15:35.812Z",
+              "EditorCaption": ""
             }
           ]
         }
