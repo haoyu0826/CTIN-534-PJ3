@@ -1,0 +1,57 @@
+
+
+newmtl Material__574
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka E:\3dmax saved\ff2\ff2 ghost\broken-neck\43df3230.dds
+	map_Kd E:\3dmax saved\ff2\ff2 ghost\broken-neck\43df3230.dds
+
+newmtl Material__530
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka E:\3dmax saved\ff2\ff2 ghost\broken-neck\00c044aa.dds
+	map_Kd E:\3dmax saved\ff2\ff2 ghost\broken-neck\00c044aa.dds
+
+newmtl Material__541
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka E:\3dmax saved\ff2\ff2 ghost\broken-neck\0a4e299a.dds
+	map_Kd E:\3dmax saved\ff2\ff2 ghost\broken-neck\0a4e299a.dds
+
+newmtl Material__464
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka E:\3dmax saved\ff2\ff2 ghost\broken-neck\9dcb0cb7.dds
+	map_Kd E:\3dmax saved\ff2\ff2 ghost\broken-neck\9dcb0cb7.dds
