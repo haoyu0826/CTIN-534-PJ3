@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float flashlightFadeDuration = 0.5f;
     public float flashlightBattery = 100f;
     [SerializeField] private float batteryConsumptionRate;
-    public float currentBattery;
 
     private Coroutine flashlightCoroutine;
     private bool isFlashlightOn = false;

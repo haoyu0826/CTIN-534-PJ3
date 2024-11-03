@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,8 @@ public class Telephone : InteractableObject
     [SerializeField] private GameObject dialogue;
     private string textDisplayed;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioToPlay;
+    [SerializeField] private Light[] lightToShutDown;
 
     private void Start()
     {
@@ -50,6 +53,20 @@ public class Telephone : InteractableObject
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        if (audioToPlay != null)
+        {
+            audioSource.clip = audioToPlay;
+            audioSource.Play();
+        }
+
+        if (lightToShutDown != null)
+        {
+            for (int i = 0; i < lightToShutDown.Length; i++)
+            {
+                lightToShutDown[i].enabled = false;
+            }
+        }
 
         isChecked = true;
     }
