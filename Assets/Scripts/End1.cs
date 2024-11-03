@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class End1 : MonoBehaviour
+public class End1 : InteractableObject
 {
     [SerializeField] private Image blackImage;
     [SerializeField] private AudioSource audioSource;
@@ -12,21 +12,18 @@ public class End1 : MonoBehaviour
     [SerializeField] private GameObject end_dialogue;
     [SerializeField] private float dialogueDuration = 5f;
 
-    private void OnTriggerEnter(Collider other)
+    protected override void ProcessObject()
     {
-        if (other.CompareTag("Player"))
-        {
-            PlayerManager.instance.pm.canMove = false;
-            PlayerManager.instance.mm.canMove = false;
+        PlayerManager.instance.pm.canMove = false;
+        PlayerManager.instance.mm.canMove = false;
 
-            blackImage.gameObject.SetActive(true);
+        blackImage.gameObject.SetActive(true);
 
-            audioSource.Stop();
-            audioSource.clip = clip;
-            audioSource.Play();
+        audioSource.Stop();
+        audioSource.clip = clip;
+        audioSource.Play();
 
-            StartCoroutine(DisplayEndDialogue());
-        }
+        StartCoroutine(DisplayEndDialogue());
     }
 
     private IEnumerator DisplayEndDialogue()
