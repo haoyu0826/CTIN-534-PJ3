@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Runtime.CompilerServices;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
@@ -29,13 +30,16 @@ public class PlayerMovement : MonoBehaviour
 
     private Coroutine flashlightCoroutine;
     private bool isFlashlightOn = false;
+
+    [SerializeField] private AudioSource footstepAudioSource;     // 用于脚步声的AudioSource
+    [SerializeField] private AudioSource flashlightAudioSource;   // 用于手电筒开关声的AudioSource
     #endregion
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        
         flashlight.enabled = false;
-
         flashlight.intensity = 0f;
     }
 
@@ -72,7 +76,12 @@ public class PlayerMovement : MonoBehaviour
             controller.Move(velocity * Time.deltaTime);
         }
         else
+        {
             isMoving = false;
+        }
+
+        // 控制步行音效
+        HandleWalkingAudio();
 
         // Flashlight toggle control
         if (Input.GetKeyDown(KeyCode.Space))
@@ -99,6 +108,20 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void HandleWalkingAudio()
+    {
+        // 如果玩家在移动且没有播放音效，则播放步行音效
+        if (isMoving && !footstepAudioSource.isPlaying)
+        {
+            footstepAudioSource.Play();
+        }
+        // 如果玩家停止移动且音效正在播放，则停止步行音效
+        else if (!isMoving && footstepAudioSource.isPlaying)
+        {
+            footstepAudioSource.Pause();
+        }
+    }
+
     private void ToggleFlashlight()
     {
         if (flashlightBattery > 0)
@@ -113,6 +136,9 @@ public class PlayerMovement : MonoBehaviour
                 flashlightCoroutine = StartCoroutine(FadeLight(flashlight, 0f, 1f, flashlightFadeDuration));
             else
                 flashlightCoroutine = StartCoroutine(FadeLight(flashlight, flashlight.intensity, 0f, flashlightFadeDuration));
+
+            // 播放手电筒开关声音
+            flashlightAudioSource.Play();
         }
         else
             TurnOffFlashlight();

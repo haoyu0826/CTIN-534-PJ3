@@ -9,9 +9,11 @@ public class Telephone : InteractableObject
 {
     [SerializeField] private GameObject dialogue;
     private string textDisplayed;
+    [SerializeField] private AudioSource otherAudioSource;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip audioToPlay;
     [SerializeField] private Light[] lightToShutDown;
+    [SerializeField] private GameObject colliderToDel;
 
     private void Start()
     {
@@ -22,7 +24,8 @@ public class Telephone : InteractableObject
     {
         base.ProcessObject();
 
-        audioSource.Stop();
+        if (otherAudioSource != null)
+            otherAudioSource.Stop();
 
         PlayerManager.instance.pm.canMove = false;
         PlayerManager.instance.mm.canMove = false;
@@ -54,9 +57,10 @@ public class Telephone : InteractableObject
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        if (audioToPlay != null)
+        if (audioToPlay != null && audioSource != null)
         {
             audioSource.clip = audioToPlay;
+            audioSource.loop = false;
             audioSource.Play();
         }
 
@@ -67,6 +71,9 @@ public class Telephone : InteractableObject
                 lightToShutDown[i].enabled = false;
             }
         }
+
+        if (colliderToDel != null)
+            Destroy(colliderToDel);
 
         isChecked = true;
     }

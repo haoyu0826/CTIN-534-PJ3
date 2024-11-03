@@ -25,12 +25,16 @@ public class GhostFollowPlayer : MonoBehaviour
     {
         float distanceToPlayer = Vector3.Distance(model_ghost.transform.position, player.position);
 
+        Vector3 directionToPlayer = (player.position - model_ghost.transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(directionToPlayer);
+        model_ghost.transform.rotation = Quaternion.Slerp(model_ghost.transform.rotation, lookRotation, Time.deltaTime * 5f);
+
         if (distanceToPlayer > stopDistance)
         {
-            Vector3 direction = (player.position - model_ghost.transform.position).normalized;
-            model_ghost.transform.position += direction * approachSpeed * Time.deltaTime;
+            model_ghost.transform.position += directionToPlayer * approachSpeed * Time.deltaTime;
         }
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
