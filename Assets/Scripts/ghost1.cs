@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class ghost1 : MonoBehaviour
+public class Ghost1 : MonoBehaviour
 {
     [SerializeField] private GameObject model_ghost;
     [SerializeField] private AudioSource audioSource;

@@ -31,7 +31,9 @@ public class GhostFollowPlayer : MonoBehaviour
 
         if (distanceToPlayer > stopDistance)
         {
-            model_ghost.transform.position += directionToPlayer * approachSpeed * Time.deltaTime;
+            Vector3 newPosition = model_ghost.transform.position + directionToPlayer * approachSpeed * Time.deltaTime;
+            newPosition.y = model_ghost.transform.position.y;
+            model_ghost.transform.position = newPosition;
         }
     }
 

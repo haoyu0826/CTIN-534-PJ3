@@ -2,7 +2,7 @@ using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class ghost2 : MonoBehaviour
+public class Ghost2 : MonoBehaviour
 {
     [SerializeField] private GameObject ghostModel;
     [SerializeField] private AudioSource as_ghost;

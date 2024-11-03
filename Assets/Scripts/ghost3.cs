@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ghost3 : MonoBehaviour
+public class Ghost3 : MonoBehaviour
 {
     [SerializeField] private GameObject model_ghost;
 
